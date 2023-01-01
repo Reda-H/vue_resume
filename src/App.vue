@@ -4,10 +4,10 @@
 <template>
   <header class="sidebar">
     <h1 class="name">Reda Herradi</h1>
-    <h1 class="role">Front End Developer @ Bell</h1>
-    <h1 class="phone">+ 212 (0) 69 74 44 476</h1>
-    <h1 class="email">herradi.r@gmail.com</h1>
-    <h1 class="linkedin"><a href="https://www.linkedin.com/in/reda-herradi/">Linkedin</a></h1>
+    <h1 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h1>
+    <a class="title-link" href="tel:+212697444476"><h1 class="phone">+212-0697444476</h1></a>
+    <a class="title-link" href="mailto:herradi.r@gmail.com"><h1 class="email">Herradi.r@gmail.com</h1></a>
+    <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/"><h1 class="linkedin">Linkedin</h1></a>
   </header>
 
   <main>
@@ -83,16 +83,15 @@
 </template>
 
 <style scoped>
-.sidebar {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
 .name {
   font-family: "Verdana", Times, serif;
-  font-size: 72px;
+  font-size: 36px;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .role {
@@ -111,6 +110,14 @@
   font-size: 18px;
 }
 
+a.title-link {
+  padding: 2px;
+}
+
+
+main {
+  margin-top: 25px;
+}
 
 h3 {
   font-size: 1.2rem;
@@ -139,5 +146,19 @@ a.project {
 ul.personal {
   columns: 2;
   gap: 15px;
+}
+
+@media (min-width: 641px){
+  .name {
+    font-family: "Verdana", Times, serif;
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 300px;
+    columns: 1;
+  }
 }
 </style>
