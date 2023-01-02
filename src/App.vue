@@ -5,10 +5,10 @@
   <header>
     <div class="sidebar">
       <h1 class="name">Reda Herradi</h1>
-      <h1 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h1>
-      <a class="title-link" href="tel:+212697444476"><h1 class="phone">+212-0697444476</h1></a>
-      <a class="title-link" href="mailto:herradi.r@gmail.com"><h1 class="email">Herradi.r@gmail.com</h1></a>
-      <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/"><h1 class="linkedin">Linkedin</h1></a>
+      <h2 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h2>
+      <a class="title-link" href="tel:+212697444476"><h2 class="phone">+212-0697444476</h2></a>
+      <a class="title-link" href="mailto:herradi.r@gmail.com"><h2 class="email">Herradi.r@gmail.com</h2></a>
+      <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/"><h2 class="linkedin">Linkedin</h2></a>
     </div>
   </header>
 

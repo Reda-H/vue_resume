@@ -12,7 +12,8 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  font-weight: 500;
+  color: rgb(0, 136, 89);
   transition: 0.4s;
 }
 
