@@ -1,14 +1,15 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
   <header>
     <div class="sidebar">
       <h1 class="name">Reda Herradi</h1>
-      <h2 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h2>
-      <a class="title-link" href="tel:+212697444476"><h2 class="phone">+212-0697444476</h2></a>
-      <a class="title-link" href="mailto:herradi.r@gmail.com"><h2 class="email">Herradi.r@gmail.com</h2></a>
-      <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/"><h2 class="linkedin">Linkedin</h2></a>
+      <h2 class="role">Front End Developer @ <RouterLink to="/play">Bell</RouterLink></h2>
+      <a class="title-link" href="tel:+212697444476" target="_blank"><h2 class="phone">+212-0697444476</h2></a>
+      <a class="title-link" href="mailto:herradi.r@gmail.com" target="_blank"><h2 class="email">Herradi.r@gmail.com</h2></a>
+      <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/" target="_blank"><h2 class="linkedin">Linkedin</h2></a>
     </div>
   </header>
 
@@ -27,10 +28,10 @@
     <h3>Experience</h3>
 
     <p>
-      Software Engineer @ <a href="https://www.sqli.com/ma-fr">SQLi</a>
+      Software Engineer @ <a href="https://www.sqli.com/ma-fr" target="_blank">SQLi</a>
     <p class="periods">July 2021 – July 2022 on <a class="project"
-        href="https://ma.buynespresso.com/ma_en/">Nestlé/Nespresso Project</a></p>
-    <p class="periods">July 2022 – Today on <a class="project" href="https://www.kamera-express.nl/">Kamera Express
+        href="https://ma.buynespresso.com/ma_en/" target="_blank">Nestlé/Nespresso Project</a></p>
+    <p class="periods">July 2022 – Today on <a class="project" href="https://www.kamera-express.nl/" target="_blank">Kamera Express
         Project</a> as Lead Front End</p>
     <ul>
       <li>Software Engineer in NuxtJs / VueJs / Typescript. Working with
@@ -50,7 +51,7 @@
     </p>
 
     <p>
-      Full Stack Mobile Developer @ <a href="https://apps.apple.com/fr/app/cosmic/id1570332721">Cosmic</a>
+      Full Stack Mobile Developer @ <a href="https://apps.apple.com/fr/app/cosmic/id1570332721" target="_blank">Cosmic</a>
     <p class="periods">June 2020 – December 2020 (6 months)</p>
     <ul>
       <li>Worked closely with the client on the development of a
@@ -66,7 +67,7 @@
 
     <h3>Education</h3>
     <p>
-      Bachelors in computer science @ <a href="http://www.aui.ma/en/">Al Akhawayn University in Ifrane</a> - 2020
+      Bachelors in computer science @ <a href="http://www.aui.ma/en/" target="_blank">Al Akhawayn University in Ifrane</a> - 2020
     <p>Software Engineering | Competitive Programming | Deep Learning </p>
     <br />
     </p>
