@@ -2,12 +2,14 @@
 </script>
 
 <template>
-  <header class="sidebar">
-    <h1 class="name">Reda Herradi</h1>
-    <h1 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h1>
-    <a class="title-link" href="tel:+212697444476"><h1 class="phone">+212-0697444476</h1></a>
-    <a class="title-link" href="mailto:herradi.r@gmail.com"><h1 class="email">Herradi.r@gmail.com</h1></a>
-    <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/"><h1 class="linkedin">Linkedin</h1></a>
+  <header>
+    <div class="sidebar">
+      <h1 class="name">Reda Herradi</h1>
+      <h1 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h1>
+      <a class="title-link" href="tel:+212697444476"><h1 class="phone">+212-0697444476</h1></a>
+      <a class="title-link" href="mailto:herradi.r@gmail.com"><h1 class="email">Herradi.r@gmail.com</h1></a>
+      <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/"><h1 class="linkedin">Linkedin</h1></a>
+    </div>
   </header>
 
   <main>
@@ -48,7 +50,7 @@
     </p>
 
     <p>
-      Full Stack Mobile Developer @ <a href="">Cosmic</a>
+      Full Stack Mobile Developer @ <a href="https://apps.apple.com/fr/app/cosmic/id1570332721">Cosmic</a>
     <p class="periods">June 2020 – December 2020 (6 months)</p>
     <ul>
       <li>Worked closely with the client on the development of a
@@ -88,6 +90,7 @@
   font-family: "Verdana", Times, serif;
   font-size: 36px;
 }
+
 .sidebar{
   display: flex;
   flex-direction: column;
@@ -156,9 +159,14 @@ ul.personal {
 }
 
 @media (min-width: 1024px) {
+  
+  header {
+    width: 300px;
+  }
   .sidebar {
     width: 300px;
     columns: 1;
+    position: fixed;
   }
 }
 </style>
