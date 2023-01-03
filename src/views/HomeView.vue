@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router';
   <header>
     <div class="sidebar">
       <h1 class="name">Reda Herradi</h1>
-      <h2 class="role">Front End Developer @ <RouterLink to="/play">Bell</RouterLink></h2>
+      <h2 class="role">Front End Developer @ <a href="https://www.bell.ca/">Bell</a></h2>
       <a class="title-link" href="tel:+212697444476" target="_blank"><h2 class="phone">+212-0697444476</h2></a>
       <a class="title-link" href="mailto:herradi.r@gmail.com" target="_blank"><h2 class="email">Herradi.r@gmail.com</h2></a>
       <a class="title-link" href="https://www.linkedin.com/in/reda-herradi/" target="_blank"><h2 class="linkedin">Linkedin</h2></a>
