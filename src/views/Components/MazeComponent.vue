@@ -55,7 +55,7 @@ export default {
                 if (hasBeenSolved)
                     return;
                 if (maze[row][col] != "s") {
-                    // mazewrapper.value.children[row].children[col].firstChild.firstChild.classList.add("visited");
+                    mazewrapper.value.children[row].children[col].firstChild.firstChild.classList.add("visited");
                     maze[row][col] = "v";
                 }
                 // GO RIGHT
