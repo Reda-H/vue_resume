@@ -46,14 +46,18 @@ export default {
 
 <style lang="scss">
 .theme-change {
+    z-index: 1;
     color: black;
     position: fixed;
     top: 0;
     right: 5%;
-    height: 50px;
-    width: 10px;
-    // background-color: black;
+    height: 56px;
+    width: 11px;
     cursor: pointer;
+
+    @media only screen and (max-width: 992px) {
+        right: 7%;
+    }
 }
 
 .theme-logo {
@@ -62,6 +66,10 @@ export default {
     right: calc(5% - 25px);
     height: 20px;
     width: 20px;
+
+    @media only screen and (max-width: 992px) {
+        right: calc(7% - 25px);
+    }
 }
 
 .beads {
