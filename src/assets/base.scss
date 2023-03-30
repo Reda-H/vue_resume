@@ -1,0 +1,112 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  
+  --light-bg: #ffffff;
+  --light-link: #008859;
+  --light-second-link: #8e00bd;
+  --light-text: #000000;
+  --light-title: #3c3c3c;
+
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  
+  --dark-bg: #1d3557;
+  --dark-link: #a8dadc;
+  --dark-second-link: #fcbf49;
+  --dark-text: #f1faee;
+  --dark-link: #e63946;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+
+    .light {
+  
+      --color-background: var(--light-bg);
+    
+      --color-border: var(--vt-c-divider-light-2);
+      --color-border-hover: var(--vt-c-divider-light-1);
+    
+      --color-heading: var(--light-title);
+      --color-text: var(--light-text);
+      --color-link: var(--light-link);      
+      --color-second-link: var(--light-second-link);
+
+    }
+
+    .dark {
+      
+    --color-background: var(--dark-bg);
+
+    --color-border: var(--vt-c-divider-light-2);
+    --color-border-hover: var(--vt-c-divider-light-1);
+
+    --color-heading: var(--dark-text);
+    --color-text: var(--dark-text);
+    --color-link: var(--dark-link);    
+    --color-second-link: var(--dark-second-link);
+    }
+
+    
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--dark-bg);
+
+    --color-border: var(--vt-c-divider-light-2);
+    --color-border-hover: var(--vt-c-divider-light-1);
+
+    --color-heading: var(--dark-title);
+    --color-text: var(--dark-text);
+    }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.single-page-wrapper {
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.3s, background-color 0.5s;
+}
