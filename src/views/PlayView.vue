@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
- <MazeComponent />
+ <!-- <MazeComponent /> -->
  <MazeBuilder />
 </template>
   
