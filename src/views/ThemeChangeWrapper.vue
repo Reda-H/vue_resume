@@ -9,9 +9,9 @@
             </span>
         </div>
         <div class="theme-logo">
-            <Icon>
-                <Sun v-if="theme == 'light'"/>
-                <Moon v-else/>
+            <Icon :class="`${theme === 'light' ? 'sun' : 'moon'}-icon`">
+                <Sun v-if="theme == 'light'" />
+                <Moon v-else />
             </Icon>
         </div>
         <slot />
@@ -70,6 +70,11 @@ export default {
     @media only screen and (max-width: 992px) {
         right: calc(7% - 25px);
     }
+
+    .moon-icon {
+        -webkit-filter: drop-shadow( 3px 3px 2px rgb(255, 162, 0));
+        filter: drop-shadow( 0px 0px 3px rgb(255, 162, 0));
+    }
 }
 
 .beads {
@@ -92,4 +97,5 @@ export default {
         height: 20px;
         border-radius: 25%;
     }
-}</style>
+}
+</style>
