@@ -6,6 +6,10 @@
                 <span class="bead" />
                 <span class="bead" />
                 <span class="bead" />
+                <span class="bead" />
+                <span class="bead" />
+                <span class="bead" />
+                <span class="bead" />
             </span>
         </div>
         <div class="theme-logo">
@@ -86,15 +90,15 @@ export default {
     gap: 2px;
 
     .bead {
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         outline: black 1px solid;
         background: grey;
         border-radius: 50%;
     }
 
     .bead:last-of-type {
-        height: 20px;
+        height: 15px;
         border-radius: 25%;
     }
 }
