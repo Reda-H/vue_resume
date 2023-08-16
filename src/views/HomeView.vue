@@ -10,7 +10,6 @@ try {
     month: new Date().getMonth(),
     year: new Date().getFullYear(),
   });
-  console.log("Document written with ID: ", docRef.id);
 } catch (e) {
   console.error("Error adding document: ", e);
 }
