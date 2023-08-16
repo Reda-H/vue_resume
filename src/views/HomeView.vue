@@ -1,5 +1,18 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { db } from '../../firebase.config';
+import { doc, addDoc, collection } from "firebase/firestore"; 
+
+
+try {
+  const docRef = await addDoc(collection(db, "dash/visits/resume"), {
+    source: window.location.origin,
+    day: new Date().getDate(),
+    month: new Date().getMonth(),
+    year: new Date().getFullYear(),
+  });
+} catch (e) {
+  console.error("Error adding document: ", e);
+}
 </script>
 
 <template>

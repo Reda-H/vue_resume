@@ -5,7 +5,9 @@ import ThemeChangeWrapper from './views/ThemeChangeWrapper.vue';
 
 <template>
   <ThemeChangeWrapper>
-    <RouterView />
+    <Suspense>
+      <RouterView />
+    </Suspense>
   </ThemeChangeWrapper>
 </template>
 
