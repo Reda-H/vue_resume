@@ -1,14 +1,40 @@
 <script setup>
 import { db } from '../../firebase.config';
-import { doc, addDoc, collection } from "firebase/firestore"; 
+import { doc, addDoc, collection } from "firebase/firestore";
 
 
 try {
-  const docRef = await addDoc(collection(db, "dash/visits/resume"), {
-    source: window.location.origin,
-    day: new Date().getDate(),
-    month: new Date().getMonth(),
-    year: new Date().getFullYear(),
+  await addDoc(collection(db, "dash/visits/resume"), {
+    timeOpened: new Date(),
+    timestamp: new Date(),
+    timezone: (new Date()).getTimezoneOffset() / 60,
+
+    source: window.location.href,
+    pageon: window.location.pathname,
+    referrer: document.referrer,
+    previousSites: history.length,
+
+    browserName: navigator.appName,
+    browserEngine: navigator.product,
+    browserVersion1a: navigator.appVersion,
+    browserVersion1b: navigator.userAgent,
+    browserLanguage: navigator.language,
+    browserOnline: navigator.onLine,
+    browserPlatform: navigator.platform,
+    javaEnabled: navigator.javaEnabled(),
+    dataCookiesEnabled: navigator.cookieEnabled,
+    dataCookies1: document.cookie,
+    dataCookies2: decodeURIComponent(document.cookie.split(";")),
+    dataStorage: {...localStorage},
+
+    sizeScreenW: screen.width,
+    sizeScreenH: screen.height,
+    sizeInW: innerWidth,
+    sizeInH: innerHeight,
+    sizeAvailW: screen.availWidth,
+    sizeAvailH: screen.availHeight,
+    scrColorDepth: screen.colorDepth,
+    scrPixelDepth: screen.pixelDepth,
   });
 } catch (e) {
   console.error("Error adding document: ", e);
