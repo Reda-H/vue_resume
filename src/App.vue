@@ -1,6 +1,14 @@
-<script setup>
+<script>
 import { RouterView } from 'vue-router'
 import ThemeChangeWrapper from './views/ThemeChangeWrapper.vue';
+
+// $sendBrowserMetadata();
+export default {
+  mounted() {
+    this.$sendBrowserMetadata();
+  }
+}
+
 </script>
 
 <template>
@@ -13,3 +21,4 @@ import ThemeChangeWrapper from './views/ThemeChangeWrapper.vue';
 
 <style scoped>
 </style>
+./plugins/gather
