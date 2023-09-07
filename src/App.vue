@@ -4,6 +4,9 @@ import ThemeChangeWrapper from './views/ThemeChangeWrapper.vue';
 
 // $sendBrowserMetadata();
 export default {
+  components: {
+    ThemeChangeWrapper
+  },
   mounted() {
     this.$sendBrowserMetadata();
   }
@@ -21,4 +24,3 @@ export default {
 
 <style scoped>
 </style>
-./plugins/gather
